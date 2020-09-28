@@ -48,7 +48,7 @@ for filename, row_class in specs.lookup.items():
 				dataValue = htmlValue
 			elif isinstance(value, tuple):
 				htmlValue = "<span title='%s'>%s</span>" % (html.escape(value[1], True), html.escape(value[0]))
-				dataValue = value
+				dataValue = value[0]
 			else:
 				htmlValue = repr(value)
 				dataValue = htmlValue
