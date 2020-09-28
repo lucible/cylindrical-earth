@@ -63,9 +63,9 @@ for filename, row_class in specs.lookup.items():
 	bits.append('</body>')
 	bits.append('</html>')
 
-	with open('%s/%s.html' % (html_dir, filename.replace('.bcsv', '')), 'w') as f:
-		for line in bits:
-			f.write(line)
-			f.write('\n')
-	with open('%s/%s.json' % (json_dir, filename.replace('.bcsv', '')), 'w') as f:
-		json.dump(objs, f, indent=4)
+	# with open('%s/%s.html' % (html_dir, filename.replace('.bcsv', '')), 'w') as f:
+	# 	for line in bits:
+	# 		f.write(line)
+	# 		f.write('\n')
+	# with open('%s/%s.json' % (json_dir, filename.replace('.bcsv', '')), 'w') as f:
+	# 	json.dump(objs, f, indent=4)
