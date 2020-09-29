@@ -11,10 +11,10 @@ html_dir = out_dir + '/html'
 
 if not os.path.exists(csv_dir):
 	os.makedirs(csv_dir)
-if not os.path.exists(json_dir):
-	os.makedirs(json_dir)
-if not os.path.exists(html_dir):
-	os.makedirs(html_dir)
+# if not os.path.exists(json_dir):
+# 	os.makedirs(json_dir)
+# if not os.path.exists(html_dir):
+# 	os.makedirs(html_dir)
 
 for filename, row_class in specs.lookup.items():
 	bits = []
